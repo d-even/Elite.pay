@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getFeeV2",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "requestV2",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"RewardEntropy.sol": "IEntropyV2"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"RewardEntropy.sol": {
+			"keccak256": "0x18a6dcfa0875c43b3d531126c97b0ff7010688af2ce8bacc2ec5a48c18e86631",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://af11a7c9470e9ddf4c2b016695b901a9ff87f5ec7ded6c3f84ce09fa556ea800",
+				"dweb:/ipfs/QmSu6aDMuUJfvPKnbHHVUo2tNUSwfZWMQRsrtw79BnaSEt"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,197 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "entropyAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "relayerAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint64",
+						"name": "sequence",
+						"type": "uint64"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					}
+				],
+				"name": "RewardAssigned",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint64",
+						"name": "sequence",
+						"type": "uint64"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "RewardRequested",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "entropy",
+				"outputs": [
+					{
+						"internalType": "contract IEntropyV2",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint64",
+						"name": "sequenceNumber",
+						"type": "uint64"
+					},
+					{
+						"internalType": "address",
+						"name": "provider",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "randomNumber",
+						"type": "bytes"
+					}
+				],
+				"name": "entropyCallback",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "relayer",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "requestReward",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"name": "userBySequence",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"RewardEntropy.sol": "RewardEntropy"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"RewardEntropy.sol": {
+			"keccak256": "0x18a6dcfa0875c43b3d531126c97b0ff7010688af2ce8bacc2ec5a48c18e86631",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://af11a7c9470e9ddf4c2b016695b901a9ff87f5ec7ded6c3f84ce09fa556ea800",
+				"dweb:/ipfs/QmSu6aDMuUJfvPKnbHHVUo2tNUSwfZWMQRsrtw79BnaSEt"
+			]
+		}
+	},
+	"version": 1
+}
