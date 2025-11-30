@@ -3,9 +3,9 @@ import express from "express";
 import { ethers } from "ethers";
 import cors from "cors";
 
-const RPC_URL = "https://eth-sepolia.g.alchemy.com/v2/OwPhOTW_fw4uSRMhTDCRC"; // <-- your RPC URL
-const PRIVATE_KEY = "85d8784dc46014c2f485377de9f778e7c05f591aad9afc79727c94dfd73cc015"; // user/owner private key
-const CONTRACT_ADDRESS = "0x8A033f4B242c3deF430ed6C7Acf0147C30A27f7a";
+const RPC_URL = ""; // <-- your RPC URL
+const PRIVATE_KEY = ""; // user/owner private key
+const CONTRACT_ADDRESS = "";
 
 const CONTRACT_ABI = [
   {
@@ -50,3 +50,4 @@ app.post("/claim", async (req, res) => {
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
+
